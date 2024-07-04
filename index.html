@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Clarence</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <span>Clarence</span>
+            <span>Gatama</span>
+        </div>
+        <div>
+            <span id="currentDay" data-testid="currentDay"></span>
+            <span id="currentTimeUTC" data-testid="currentTimeUTC"></span>
+        </div>
+    </nav>
+    <main>
+        <section id="profile">
+            <div class="person">
+                <h1 data-testid="slackDisplayName">Clarence Gatama</h1>
+                <p>Software Developer</p>
+                <div class="email">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <p data-testid="slackEmail">gatama001@gmail.com</p>
+                </div>
+            </div>
+            <img data-testid="slackProfilePicture" src="./assets/me.jpg" alt="Clarence Gatama picture smiling">
+        </section>
+        <section id="goals">
+            <h1>My Tech Goals</h1>
+            <article class="goals-article">
+                <div class="single-goal">
+                    <div>
+                        <span>1</span>
+                    </div>
+                    <p>To master React and react state management and build portfolio projects</p>
+                </div>
+                <div class="single-goal">
+                    <div>
+                        <span>2</span>
+                    </div>
+                    <p>To learn Tailwind CSS</p>
+                </div>
+                <div class="single-goal">
+                    <div>
+                        <span>3</span>
+                    </div>
+                    <p>To master MongoDB and Mongoose and build fullstack projects</p>
+                </div>
+                <div class="single-goal">
+                    <div>
+                        <span>4</span>
+                    </div>
+                    <p>To master GraphQL and Apollo and build fullstack projects</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">HNG Learn</a>
+        <a href="https://keyword.dog/" target="_blank" data-testid="keywordLink">Keyword</a>
+        <a href="https://scrapeanyweb.site/" target="_blank" data-testid="scrapeanywebLink">Web scrapping</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
